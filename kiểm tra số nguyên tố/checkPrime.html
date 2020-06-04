@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function checkPrime(a){
+            if (a<2) return `Số ${a} không phải là số nguyên tố<br>`;
+            if (a==2) return `Số ${a} là số nguyên tố<br>`;
+            for (let i = 2; i<a; i++){
+                    if (a % i == 0){
+                        return `Số ${a} không phải là số nguyên tố<br>`;
+                    }
+                } return `Số ${a} là số nguyên tố<br>`;
+        }
+        
+        document.write(checkPrime(1));
+        document.write(checkPrime(2));
+        document.write(checkPrime(3));
+        document.write(checkPrime(4));
+        document.write(checkPrime(5));
+        document.write(checkPrime(6));
+        
+
+    </script>
+</body>
+</html>
