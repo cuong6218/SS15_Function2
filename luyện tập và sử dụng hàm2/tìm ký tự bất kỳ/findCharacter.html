@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function findCharacter(arr){
+             a = prompt("Nhập một ký tự bất kỳ:");
+            let count=0;
+            let flag = false;
+            for (let i = 0; i<arr.length; i++){
+                if (a == arr[i]){
+                    count++;
+                    flag = true;
+                }
+            } 
+            if (flag == false){
+                alert("-1");
+            } else alert(`Trong mảng ${arr}, Ký tự ${a} xuất hiện ${count} lần.`);
+        }
+        arr1 = ['a','a', 'b', 'c', 'a'];
+        arr2 = ['b','c'];
+        findCharacter(arr1);
+        findCharacter(arr2);
+    </script>
+</body>
+</html>
