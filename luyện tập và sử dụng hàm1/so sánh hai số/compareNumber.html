@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="number1"/>
+    <input type="text" id="number2"/>
+    <button onclick="compareNumber()">Click me!</button>
+    <script>
+        function compareNumber(a,b){
+            a = +document.getElementById('number1').value;
+            b = +document.getElementById('number2').value;
+            if (a>b){
+                alert('Số thứ nhất lớn hơn số thứ hai');
+            }
+            if (a<b){
+                let sum = a+b;
+                alert(`Tổng hai số là: ${sum}`);
+            }
+        }
+    </script>
+</body>
+</html>
